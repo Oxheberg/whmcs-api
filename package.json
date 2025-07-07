@@ -1,0 +1,42 @@
+{
+  "name": "@oxheberg/whmcs-api",
+  "version": "1.0.0",
+  "description": "A simple typescript wrapper for the WHMCS API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "prepare": "pnpm build"
+  },
+  "keywords": [
+    "whmcs",
+    "api",
+    "wrapper",
+    "typescript"
+  ],
+  "author": "Oxheberg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oxheberg/whmcs-api.git"
+  },
+  "homepage": "https://github.com/oxheberg/whmcs-api#readme",
+  "bugs": {
+    "url": "https://github.com/oxheberg/whmcs-api/issues"
+  },
+  "contributors": [
+    {
+      "name": "Zerga Abderrezak",
+      "email": "zerga@oxheberg.com",
+      "url": "https://github.com/zergaabderrezak"
+    }
+  ],
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
