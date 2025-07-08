@@ -15,7 +15,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup src/index.ts --watch",
-    "prepare": "pnpm build",
+    "prepare": "husky",
     "format": "biome format",
     "lint": "biome lint",
     "check": "biome check --write"
