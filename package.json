@@ -1,16 +1,24 @@
 {
   "name": "@oxheberg/whmcs-api",
-  "version": "1.0.0",
-  "description": "A simple typescript wrapper for the WHMCS API",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.0.0",
+  "description": "A simple TypeScript wrapper for the WHMCS API",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
-    "prepare": "pnpm build"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --watch",
+    "prepare": "pnpm build",
+    "format": "biome format",
+    "lint": "biome lint",
+    "check": "biome check --write"
   },
   "keywords": [
     "whmcs",
@@ -37,6 +45,9 @@
   ],
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "husky": "^9.1.7",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
 }
