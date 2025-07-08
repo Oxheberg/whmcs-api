@@ -18,7 +18,7 @@
     "prepare": "husky",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check --write"
+    "check": "biome check --staged --write"
   },
   "keywords": [
     "whmcs",

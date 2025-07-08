@@ -4,6 +4,11 @@
     "ignoreUnknown": true,
     "includes": ["src/**/*.ts"]
   },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "defaultBranch": "main"
+  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
