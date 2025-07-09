@@ -1,6 +1,6 @@
 {
   "name": "@oxheberg/whmcs-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A fully featured and type-safe TypeScript client for the WHMCS API. Includes all official endpoints, modular design, helpful errors, and built with modern developer experience in mind.",
   "exports": {
     "import": "./dist/index.mjs",
@@ -22,21 +22,21 @@
     "release": "pnpm build && changeset publish"
   },
   "keywords": [
-  "whmcs",
-  "api",
-  "typescript",
-  "wrapper",
-  "client",
-  "sdk",
-  "billing",
-  "hosting",
-  "automation",
-  "whmcs-api",
-  "whmcs-client",
-  "nodejs",
-  "modules",
-  "typesafe"
-],
+    "whmcs",
+    "api",
+    "typescript",
+    "wrapper",
+    "client",
+    "sdk",
+    "billing",
+    "hosting",
+    "automation",
+    "whmcs-api",
+    "whmcs-client",
+    "nodejs",
+    "modules",
+    "typesafe"
+  ],
   "author": "Oxheberg",
   "license": "MIT",
   "repository": {
