@@ -1,7 +1,7 @@
 {
   "name": "@oxheberg/whmcs-api",
   "version": "0.0.0",
-  "description": "A simple TypeScript wrapper for the WHMCS API",
+  "description": "A fully featured and type-safe TypeScript client for the WHMCS API. Includes all official endpoints, modular design, helpful errors, and built with modern developer experience in mind.",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
@@ -18,14 +18,25 @@
     "prepare": "husky",
     "format": "biome format",
     "lint": "biome lint",
-    "check": "biome check --staged --write"
+    "check": "biome check --staged --write --no-errors-on-unmatched",
+    "release": "pnpm build && changeset publish"
   },
   "keywords": [
-    "whmcs",
-    "api",
-    "wrapper",
-    "typescript"
-  ],
+  "whmcs",
+  "api",
+  "typescript",
+  "wrapper",
+  "client",
+  "sdk",
+  "billing",
+  "hosting",
+  "automation",
+  "whmcs-api",
+  "whmcs-client",
+  "nodejs",
+  "modules",
+  "typesafe"
+],
   "author": "Oxheberg",
   "license": "MIT",
   "repository": {
@@ -46,6 +57,7 @@
   "packageManager": "pnpm@10.12.4",
   "devDependencies": {
     "@biomejs/biome": "2.0.6",
+    "@changesets/cli": "^2.29.5",
     "husky": "^9.1.7",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
